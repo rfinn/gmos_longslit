@@ -33,3 +33,12 @@ all_files.sort()
 # create lists of bias frames
 
 # to check which biases are in the directory
+detector_roi_setting.
+
+all_biases = dataselect.select_data(all_files, ['BIAS'])
+for bias in all_biases:
+    ad = astrodata.open(bias)
+    print(bias, '  ', ad.detector_roi_setting())
+
+
+    
