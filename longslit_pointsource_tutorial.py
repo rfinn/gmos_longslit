@@ -36,14 +36,14 @@ except cal_service.localmanager.LocalManagerError:
 
 # commands from https://dragons.readthedocs.io/projects/gmosls-drtutorial/en/v4.0.0/ex1_gmosls_dithered_api.html
 
-#logutils.config(file_name='gmosls_tutorial.log')
-logutils.config(file_name='gmosls_VFID5842_NGC5356.log')
+logutils.config(file_name='gmosls_tutorial.log')
+#logutils.config(file_name='gmosls_VFID5842_NGC5356.log')
 
 
 # create file lists
 
-#all_files = glob.glob('../playdata/example1/*.fits')
-all_files = glob.glob('../raw/*.fits')
+all_files = glob.glob('../playdata/example1/*.fits')
+#all_files = glob.glob('../raw/*.fits')
 all_files.sort()
 
 #########################################################
