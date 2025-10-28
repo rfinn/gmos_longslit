@@ -142,8 +142,8 @@ if reduce_science:
     # construct name of output file
     output_rootname = os.path.basename(scitarget[0])
     print("guess for the name of the 2D spectrum is: ", output_rootname.replace('.fits','_2D.fits'))
-    spectrum_2d = output_rootname.replace('.fits','_2D.fits'))
-    spectrum_1d = output_rootname.replace('.fits','_1D.fits'))    
+    spectrum_2d = output_rootname.replace('.fits','_2D.fits')
+    spectrum_1d = output_rootname.replace('.fits','_1D.fits')    
     try:
         display_result(spectrum_2d)
     except:
